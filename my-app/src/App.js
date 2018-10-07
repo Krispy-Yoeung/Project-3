@@ -4,6 +4,8 @@ import  HomePage  from "./components/pages/HomePage"
 import  LoginPage  from "./components/pages/LoginPage"
 import SignupPage from "./components/pages/SignupPage"
 import DashboardPage from "./components/pages/DashboardPage"
+import { Bootstrap, Grid, Row, Col } from "react-bootstrap";
+      
 
 
 
@@ -23,7 +25,7 @@ class App extends Component{
 
         
       
-      
+
       </div>
     )
   }
