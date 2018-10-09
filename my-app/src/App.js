@@ -10,7 +10,7 @@ class App extends Component {
   state = {};
   render() {
     return (
-      // <Router>
+      //  <Router>
       <div>
         {/* importing the NavBar for all pages */}
         <NavBar />
