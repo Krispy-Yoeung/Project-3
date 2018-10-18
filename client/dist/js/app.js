@@ -25834,7 +25834,7 @@
 	    _react2.default.createElement(
 	      'nav',
 	      { className: 'navbar navbar-expand-lg navbar-light bg-light col-md-12 header' },
-	      'App Name',
+	      'My Super Hero List',
 	      _react2.default.createElement(
 	        'button',
 	        { className: 'navbar-toggler', type: 'button', 'data-toggle': 'collapse', 'data-target': '#navbarNav', 'aria-controls': 'navbarNav', 'aria-expanded': 'false', 'aria-label': 'Toggle navigation' },
@@ -26113,7 +26113,7 @@
 	      _react2.default.createElement(
 	        "p",
 	        { className: "lead" },
-	        "Welcome to our Page ! "
+	        "Welcome to our Page !!!! "
 	      )
 	    )
 	  );
