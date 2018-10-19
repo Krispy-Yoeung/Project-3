@@ -18,6 +18,7 @@ module.exports = {
       test: /\.(js|jsx)$/,
       include: path.join(__dirname, '/client/src'),
       loader: 'babel-loader',
+
     }],
   },
 
