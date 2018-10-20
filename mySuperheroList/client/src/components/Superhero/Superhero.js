@@ -1,14 +1,25 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
 
+import { Col, Row, Container } from "../Grid";
+import ComicCharacters from "../ComicCharacters";
+import Youtube from "../Youtube";
+import "./Superhero.css";
 
+class Superhero extends Component {
+  render() {
+    return (
+      <Container>
+        <Row>
+          <Col size="md-7">
+            <ComicCharacters />
+          </Col>
+          <Col size="md-4">
+            <Youtube />
+          </Col>
+        </Row>
+      </Container>
+    );
+  }
+}
 
-
-
-const Superhero = () => (
-    <div className= "main-container">
-        <h3>Superhero Page</h3>
-        
-    </div>  
-)
-
-export default Superhero
+export default Superhero;
