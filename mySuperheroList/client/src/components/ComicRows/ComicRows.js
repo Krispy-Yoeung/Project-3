@@ -15,7 +15,6 @@ class ComicRows extends Component {
   };
   // Wikipedia link
   readMore = () => {
-    // let comic = "";
     const url = `https://en.wikipedia.org/wiki/${this.props.name}`;
 
     const win = window.open(url, "_blank");
