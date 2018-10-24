@@ -1,15 +1,19 @@
 .navbar {
   height: 100px;
-  background-color: ghostwhite;
+  background-color: black;
+  color: #828186;
   /* margin-top: 1%; */
 }
 
 h1 {
-  color: black;
   text-align: left;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 .text-secondary {
   text-align: right;
+}
+
+.button {
+  font-size: 20px;
 }

@@ -32,10 +32,20 @@ class Dashboard extends Component {
           <ComicRows
             key={char.id}
             name={char.name}
-            image={char.image.url}
-            bio={char.biography.publisher.toUpperCase()}
-            heroOrVillian={char.biography.alignment.toUpperCase()}
-            group={char.connections["group-affiliation"]}
+            image={char.image.url || "No Image found"}
+            bio={
+              char.biography.publisher.toUpperCase() || "No publishers found"
+            }
+            heroOrVillain={
+              char.biography.alignment.toUpperCase() || "No alignment found"
+            }
+            group={
+              char.connections["group-affiliation"] ||
+              "No Group-Affiliation found"
+            }
+            realName={char.biography["full-name"] || "No Real Name found"}
+            alias={char.biography.aliases || "No Alias found"}
+            ego={char.biography["alter-egos"] || "No Alter Ego found"}
           />
         );
         comicRows.push(comicRow);

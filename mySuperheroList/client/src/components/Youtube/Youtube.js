@@ -17,7 +17,7 @@ class Youtube extends Component {
       part: "snippet",
       maxResults: 25,
       key: key,
-      q: `${this.props.name} ${this.props.publishers}`
+      q: `${this.props.name} ${this.props.publishers} ${this.props.realName}`
     };
     $.getJSON(URL, options, data => {
       const res = data.items;
@@ -47,7 +47,7 @@ class Youtube extends Component {
 
   render() {
     return (
-      <div className="App">
+      <div>
         <h1>Video Viewing</h1>
         {this.state.iframe}
       </div>

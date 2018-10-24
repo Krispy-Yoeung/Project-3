@@ -6,7 +6,7 @@ class Video extends Component {
       <div className="video-content">
         <table key={this.props.id} id={this.props.id}>
           <thead>
-            <th>{this.props.title}</th>
+            <th className="video">{this.props.title}</th>
           </thead>
           <tbody>
             <tr>
