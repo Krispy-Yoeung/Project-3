@@ -1,16 +1,10 @@
-body {
-  /* color: #fff; */
-  color: teal;
-}
 .video-content {
-  text-align: center;
-}
-
-td {
-  text-align: center;
-}
-
-table {
   width: 500px;
+  text-align: center;
   margin: 0 auto;
+  margin-left: 86px;
+}
+
+.video {
+  width: 400px;
 }
