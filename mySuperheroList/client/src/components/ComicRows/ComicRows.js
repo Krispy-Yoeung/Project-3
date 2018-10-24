@@ -1,24 +1,28 @@
 import React, { Component } from "react";
 
 import "./ComicRows.css";
+import Modal from "../Modal";
+import Youtube from "../Youtube";
 
 class ComicRows extends Component {
-  // Youtube link
-  viewVideos = () => {
-    // console.log(this.props.name);
-    const url = `https://www.youtube.com/results?search_query=${
-      this.props.name
-    } ${this.props.bio}`;
-
-    const win = window.open(url, "_blank");
-    win.focus();
+  state = {
+    show: false
   };
+  // Youtube link
+
   // Wikipedia link
   readMore = () => {
     const url = `https://en.wikipedia.org/wiki/${this.props.name}`;
 
     const win = window.open(url, "_blank");
     win.focus();
+  };
+
+  showModal = () => {
+    this.setState({
+      ...this.state,
+      show: !this.state.show
+    });
   };
   render() {
     return (
@@ -38,11 +42,11 @@ class ComicRows extends Component {
                 <h2>Good/Bad: {this.props.heroOrVillian}</h2>
                 <p>Group Affiliation: {this.props.group}</p>
                 <h3>Publishers: {this.props.bio}</h3>
-                <input
+                {/* <input
                   type="button"
                   value="Watch Videos"
                   onClick={this.viewVideos.bind(this)}
-                />
+                />*/}
 
                 <input
                   className="button"
@@ -50,6 +54,15 @@ class ComicRows extends Component {
                   value="Read More"
                   onClick={this.readMore.bind(this)}
                 />
+                <input
+                  type="button"
+                  onClick={this.showModal}
+                  value="Watch Videos"
+                />
+
+                <Modal onClose={this.showModal} show={this.state.show}>
+                  <Youtube name={this.props.name} publishers={this.props.bio} />
+                </Modal>
               </td>
             </tr>
           </tbody>
