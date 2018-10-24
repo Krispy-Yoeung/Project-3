@@ -1,0 +1,16 @@
+body {
+  /* color: #fff; */
+  color: teal;
+}
+.video-content {
+  text-align: center;
+}
+
+td {
+  text-align: center;
+}
+
+table {
+  width: 500px;
+  margin: 0 auto;
+}

@@ -2,8 +2,6 @@ import React, { Component } from "react";
 
 import { Col, Row, Container } from "../Grid";
 import ComicCharacters from "../ComicCharacters";
-import Youtube from "../Youtube";
-// import Youtube from "../SearchBar";
 
 import "./DashBoard.css";
 import SearchBar from "../SearchBar";
@@ -60,9 +58,6 @@ class Dashboard extends Component {
           <Col size="md-12">
             <ComicCharacters rows={this.state.rows} />
           </Col>
-          {/* <Col size="md-4">
-            <Youtube />
-          </Col> */}
         </Row>
       </Container>
     );
