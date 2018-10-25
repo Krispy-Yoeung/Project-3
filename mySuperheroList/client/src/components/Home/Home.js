@@ -10,10 +10,8 @@ const Home = () => (
         <div className="home-content">
           <h1>Hello comic book lovers and noobs</h1>
           <p>
-            Please enjoy our website as much as we enjoy creating it. Create an
-            account with a email and password to checkout our collection of
-            superheros and Villains from Marvel and DC universe. There are some
-            hero and villains from the Heros comic books and tv show
+          Please enjoy our website as much as we enjoy creating it. Create an account to checkout our collection of
+            superheros and Villains from Marvel and DC universe. Plus find others in the community to discuss all things hero or villainy. 
           </p>
           <p />
         </div>
@@ -32,7 +30,7 @@ const Home = () => (
             alt="Steve Yeuong"
           />
           <div>
-            Favorite superhero: <span className="bold">Superman</span> |
+            Favorite superhero: <span className="bold">Superman</span> <br/>
             Favorite Villain:
             <span className="bold"> Joker</span>
           </div>
@@ -53,7 +51,7 @@ const Home = () => (
             alt="Kris Wilson"
           />
           <div>
-            Favorite superhero: <span className="bold">Batman</span> | Favorite
+            Favorite superhero: <span className="bold">Batman</span> <br/> Favorite
             Villain:
             <span className="bold"> Joker</span>
           </div>
