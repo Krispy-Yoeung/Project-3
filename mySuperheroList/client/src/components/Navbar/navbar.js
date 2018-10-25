@@ -39,10 +39,9 @@ class Navbar extends Component {
         <div id="top-filler" />
         <a className="navbar-brand" href="/">
           <img
-            src="https://via.placeholder.com/350x150"
-            width="50"
-            height="50"
-            alt=""
+            className="title-image"
+            src="http://freeaddon.com/wp-content/uploads/2017/09/marvel-vs-dc-0.jpg"
+            alt="Marvel vs DC"
           />
         </a>
         <h1 className="App-title">mySuperheroList</h1>
