@@ -46,37 +46,36 @@ class Navbar extends Component {
         </a>
         <h1 className="App-title">mySuperheroList</h1>
         {loggedIn ? (
-          <section className="navbar-section">
-            <Link to="/dashboard" className="btn button btn-link ml-5">
-              <span className="text-secondary">Dashboard</span>
-            </Link>
-            <Link
-              to="/superhero"
-              className="btn button btn-link text-secondary"
-            >
-              <span className="text-secondary">Superhero</span>
-            </Link>
-            <Link
-              to="#"
-              className="btn button btn-link text-secondary"
-              onClick={this.logout}
-            >
-              <span className="text-secondary">Logout</span>
-            </Link>
-          </section>
-        ) : (
-          <section className="navbar-section">
-            <Link to="/" className="btn button btn-link text-secondary ml-5">
-              <span className="text-secondary">Home</span>
-            </Link>
-            <Link to="/login" className="btn button btn-link text-secondary">
-              <span className="text-secondary">Login</span>
-            </Link>
-            <Link to="/signup" className="btn button btn-link">
-              <span className="text-secondary">Sign up</span>
-            </Link>
-          </section>
-        )}
+          <section className="navbar navbar-default navbar-static-top">
+            <Link to="/dashboard" className="btn btn-link ml-5">
+                                    <span className="text-secondary">Super Finder</span>
+				                </Link>
+                                {/* <Link to="/superheros" className="btn btn-link text-secondary">
+                                    <span className="text-secondary">Superhero</span>
+				                </Link> */}
+                                <Link to="/forum" className="btn btn-link text-secondary">
+                                    <span className="text-secondary">Forum</span>
+				                </Link>
+                                <Link to="#" className="btn btn-link text-secondary" onClick={this.logout}>
+                                <span className="text-secondary">Logout</span></Link>
+                            </section>
+                        ) : (
+                            <section className="navbar-section">
+                                <Link to="/" className="btn btn-link text-secondary ml-5">
+                                    <span className="text-secondary">Home</span>
+                                </Link>
+                                <Link to="/forum" className="btn btn-link text-secondary">
+                                    <span className="text-secondary">Forum</span>
+				                </Link>
+                                <Link to="/login" className="btn btn-link text-secondary">
+                                    <span className="text-secondary">Login</span>
+				                </Link>
+                                <Link to="/signup" className="btn btn-link">
+                                    <span className="text-secondary">Sign up</span>
+				                </Link>
+                
+                            </section>
+                        )}
       </nav>
     );
   }
